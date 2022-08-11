@@ -68,7 +68,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: ./mindmeld/docker_containers/mindmeld_dep_docker
           push: true
           tags: |
             ghcr.io/${{ steps.name.outputs.lowercase }}:latest
